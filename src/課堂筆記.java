@@ -190,11 +190,12 @@ public class 課堂筆記 {
         } else if (scores >= 60 && scores <= 79) {
             result = "好";
         } else if (scores >= 0 && scores <= 59) {
-            result = "不及格";
+            result = "z不及格";
         } else {
             result = "請輸入1~100的範圍數字";
         }
         return result; // 回傳result的值給方法使用 回傳甚麼就是要使用甚麼
     }
+
 
 }
