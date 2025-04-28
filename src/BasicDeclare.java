@@ -47,6 +47,6 @@ public class BasicDeclare {
 
         // String[] students = {"A1", "A2", "A3"};
         // System.out.println(students[1]);
-
+ String name="123123123132";
     }
 }
