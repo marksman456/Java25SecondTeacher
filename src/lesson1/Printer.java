@@ -1,3 +1,4 @@
+package lesson1;
 public class Printer {
 
     //多載
@@ -17,4 +18,21 @@ public class Printer {
     public void show(int number, String text) {
         System.out.println("不同類型多個輸入" + number + "text:" + text);
     }
+    
+    // 多載介紹
+    public static void main(String[] args) throws Exception {
+    
+        Printer printer1 = new Printer();
+        
+        printer1.show(); // 沒任何輸入
+        printer1.show("Hello"); // 單一文字輸入 Hello
+        printer1.show(123); // 單一數字輸入 123 
+        printer1.show(456, "World"); // 不同類型多個輸入 456 text:World
+
+
+
+        
+        }
+
+
 }

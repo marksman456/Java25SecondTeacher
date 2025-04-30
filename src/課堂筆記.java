@@ -1,4 +1,6 @@
+import lesson1.Person;
 public class 課堂筆記 {
+
 
     public static void main(String[] args) throws Exception {
 
@@ -153,23 +155,23 @@ public class 課堂筆記 {
 
         // for each 陣列 單獨顯示每個值
 
-        String getResult = checkscores(60);
-        System.out.println(getResult);
+    //     String getResult = checkscores(60);
+    //     System.out.println(getResult);
 
-        String getResult2= checkArray(1,2,3);
-        System.out.println(getResult2);
-    }
+    //     String getResult2= checkArray(1,2,3);
+    //     System.out.println(getResult2);
+    // }
 
-    public static String checkArray(int a, int b, int c) {
-        String result = "";
-        int[] bingo = { a, b, c }; // 修正: 使用 int 型別的參數 a, b, c 建立整數陣列
-        for (int nums : bingo) {
-            result += nums + " "; // 修正: 使用 += 將每個元素累加到 result，並加上空格分隔
-        }
-        result = result.trim(); // 修正: 去除最後多餘的空格
+    // public static String checkArray(int a, int b, int c) {
+    //     String result = "";
+    //     int[] bingo = { a, b, c }; // 修正: 使用 int 型別的參數 a, b, c 建立整數陣列
+    //     for (int nums : bingo) {
+    //         result += nums + " "; // 修正: 使用 += 將每個元素累加到 result，並加上空格分隔
+    //     }
+    //     result = result.trim(); // 修正: 去除最後多餘的空格
         
-        return result; // 回傳 result 的值給方法使用
-    }
+    //     return result; // 回傳 result 的值給方法使用
+    // }
 
     
 
@@ -177,28 +179,38 @@ public class 課堂筆記 {
     // 用string把結果印出來
     // 框框內參數是要拿來使用的值
     // 回傳的是你要接來使用的 我要拿的是result 接出來給這個方法使用
-    public static String checkscores(int scores) {
-        String result = "";
+    // public static String checkscores(int scores) {
+    //     String result = "";
 
-        if (scores >= 90 && scores <= 100) {
-            result = "很棒";
-        }
+    //     if (scores >= 90 && scores <= 100) {
+    //         result = "很棒";
+    //     }
 
-        else if (scores >= 80 && scores <= 89) {
-            result = "很好";
+    //     else if (scores >= 80 && scores <= 89) {
+    //         result = "很好";
 
-        } else if (scores >= 60 && scores <= 79) {
-            result = "好";
-        } else if (scores >= 0 && scores <= 59) {
-            result = "z不及格";
-        } else {
-            result = "請輸入1~100的範圍數字";
-        }
-        return result; // 回傳result的值給方法使用 回傳甚麼就是要使用甚麼
+    //     } else if (scores >= 60 && scores <= 79) {
+    //         result = "好";
+    //     } else if (scores >= 0 && scores <= 59) {
+    //         result = "z不及格";
+    //     } else {
+    //         result = "請輸入1~100的範圍數字";
+    //     }
+    //     return result; // 回傳result的值給方法使用 回傳甚麼就是要使用甚麼
+    // }
+
+
+    //跨檔使用物件方法 最上層使用import 最上層使用 "import 想要引用的資料夾的.Person;"
+
+        Person person1 = new Person("Edward", 25);
+        
+
+        person1.showPersonInfo();// 印出來的結果是這個物件的資料
+
     }
-
-
-    
-
-
 }
+
+
+
+
+

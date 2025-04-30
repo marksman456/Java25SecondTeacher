@@ -1,3 +1,5 @@
+package lesson1;
+import lesson1.homework.traning.Employee;
 public class DemoClass {
     public static void main(String[] args) {
 
@@ -94,20 +96,23 @@ public class DemoClass {
         // System.out.println("學校地址:" + address);
 
 
-        student stu1=new student("hank",100);
-        stu1.showStudentscore();
+    //     student stu1=new student();
          
 
-        stu1.setName("Dan");
-       String name1=stu1.getName();
-       System.out.println("學生姓名:"+name1);
+    //     stu1.setName("Dan");
+    //    String name1=stu1.getName();
+    //    System.out.println("學生姓名:"+name1);
        
-       stu1.setScore(100);
-       int score1=stu1.getScore();
-       System.out.println("學生成績:"+score1);
-    }
+    //    stu1.setScore(100);
+    //    int score1=stu1.getScore();
+    //    System.out.println("學生成績:"+score1);
+    // }
 
     
+Employee employee1= new Employee("susan");
 
 
+String e1 =employee1.getName();
+System.out.println("員工姓名:" + e1);
+}
 }

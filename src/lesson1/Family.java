@@ -1,3 +1,4 @@
+package lesson1;
 public class Family {
     public String who;
     public String name;

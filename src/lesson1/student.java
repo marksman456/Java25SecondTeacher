@@ -1,17 +1,16 @@
+package lesson1;
 public class student {
     private String name;
     private int score;
 
-    public student(String inputName, int inputScore) {
-        this.name = inputName;
-        this.score = inputScore;
-    }
 
+  
     public void showStudentscore() {
         System.out.println("學生姓名: " + this.name + ", 學生成績: " + this.score);
 
     }
 
+    //如果這裡有input的入口 就不建議使用建構子 除非要導向這裡的function
     public void setName(String inputName) {
         this.name = inputName;
     }

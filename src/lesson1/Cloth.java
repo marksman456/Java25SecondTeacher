@@ -1,3 +1,4 @@
+package lesson1;
 public class Cloth {
     public String logo="";
     public String color="";

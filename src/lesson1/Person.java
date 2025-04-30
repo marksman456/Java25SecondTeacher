@@ -1,3 +1,4 @@
+package lesson1;
 public class Person {
     public String name;
     public int age;
@@ -8,6 +9,9 @@ public class Person {
     public Person(String inputName, int age) {
         this.name = inputName;
         this.age = age;
+    }
+    public void showPersonInfo() {
+        System.out.println("Person.name:" + this.name + " Person.age:" + this.age);
     }
 
     public void showName() {
