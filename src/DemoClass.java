@@ -59,22 +59,28 @@ public class DemoClass {
         // fmaily1.showFamilyInfo();
         // fmaily2.showFamilyInfo();
 
-        Bank bank1=new Bank("123",100);
-        bank1.showBalance();
 
-        bank1.setAccount("123");
-        String account=bank1.getAccount();
-        System.out.println("帳號:" + account);
 
-        bank1.setBalance(5000);
-        int balance=bank1.getBalance();
+        // Bank bank1=new Bank("123",3000);
+        // bank1.showBalance();
 
-        System.out.println("存錢後的餘額:" + balance);
+        // //更改帳號
+        // bank1.setAccount("123","456");
+        // String account=bank1.getAccount();
+        // System.out.println("帳號:" + account);
 
-        bank1.setBalance(0);
-        int b2=bank1.getBalance();
+        // //action提款
+        // bank1.setBalance("123","withdraw",3000);
+        // int balance=bank1.getBalance();
 
-        System.out.println("存錢後的餘額:" + b2);
+        // System.out.println("您的餘額:" + balance);
+
+        // //action存款
+        // bank1.setBalance("123","deposit",1000);
+        // int b2=bank1.getBalance();
+
+        // System.out.println("您的餘額:" + b2);
+
 
         // School school1 = new School("01", "23號");
         // school1.showSchoolInfo();
@@ -87,6 +93,21 @@ public class DemoClass {
         // String address = school1.getAddress();
         // System.out.println("學校地址:" + address);
 
+
+        student stu1=new student("hank",100);
+        stu1.showStudentscore();
+         
+
+        stu1.setName("Dan");
+       String name1=stu1.getName();
+       System.out.println("學生姓名:"+name1);
+       
+       stu1.setScore(100);
+       int score1=stu1.getScore();
+       System.out.println("學生成績:"+score1);
     }
+
+    
+
 
 }
