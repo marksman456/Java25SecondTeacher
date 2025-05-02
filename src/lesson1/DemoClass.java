@@ -1,5 +1,7 @@
 package lesson1;
+
 import lesson1.homework.traning.Employee;
+
 public class DemoClass {
     public static void main(String[] args) {
 
@@ -61,8 +63,6 @@ public class DemoClass {
         // fmaily1.showFamilyInfo();
         // fmaily2.showFamilyInfo();
 
-
-
         // Bank bank1=new Bank("123",3000);
         // bank1.showBalance();
 
@@ -83,7 +83,6 @@ public class DemoClass {
 
         // System.out.println("您的餘額:" + b2);
 
-
         // School school1 = new School("01", "23號");
         // school1.showSchoolInfo();
 
@@ -95,24 +94,58 @@ public class DemoClass {
         // String address = school1.getAddress();
         // System.out.println("學校地址:" + address);
 
+        // student stu1=new student();
 
-    //     student stu1=new student();
-         
+        // stu1.setName("Dan");
+        // String name1=stu1.getName();
+        // System.out.println("學生姓名:"+name1);
 
-    //     stu1.setName("Dan");
-    //    String name1=stu1.getName();
-    //    System.out.println("學生姓名:"+name1);
-       
-    //    stu1.setScore(100);
-    //    int score1=stu1.getScore();
-    //    System.out.println("學生成績:"+score1);
-    // }
+        // stu1.setScore(100);
+        // int score1=stu1.getScore();
+        // System.out.println("學生成績:"+score1);
+        // }
 
-    
-Employee employee1= new Employee("susan");
+        // Employee employee1= new Employee("susan");
+
+        // String e1 =employee1.getName();
+        // System.out.println("員工姓名:" + e1);
+        // }
+
+        // Bank bank2= new Bank("789",1000);
+
+        // bank2.setAccount("789", "123");
+
+        // System.out.println(bank2.getAccount());
+
+        // bank2.setBalance("123", "deposit", 2000);
+
+        // int getBalance=bank2.getBalance();
+
+        // System.out.println("餘額:" + getBalance);
+
+        // bankAccount myAccount = new bankAccount("A123456", 1000.0);
+
+        // myAccount.setAccountBalance(500.00,"deposit","A123456"); // 存款
+        // myAccount.withdraw(300.0); // 提款
+        // myAccount.withdraw(1500.0); // 餘額不足
+
+        // System.out.println("Account: " + myAccount.getAccountNumber());
+        // System.out.println("Balance: " + myAccount.getBalance());
+
+        student student1 = new student("teacher123", 100, 54);
+
+        student1.setScore1(20, "teacher123");
+        student1.setScore2(90, "teacher123");
+        System.out.println(student1.getScore1("teacher123"));
+        System.out.println(student1.getScore2("teacher123"));
 
 
-String e1 =employee1.getName();
-System.out.println("員工姓名:" + e1);
-}
+        //toString()方法的使用
+        // 這個方法會返回一個字串，包含了物件的類別名稱和它的hash碼
+        //好處是不用一直打System.out.println()來顯示物件的內容
+        //直接呼叫這個方法就可以了
+        //這個方法是從Object類別繼承來的，所以所有的Java物件都可以使用這個方法
+        System.out.println(student1);
+
+    }
 }

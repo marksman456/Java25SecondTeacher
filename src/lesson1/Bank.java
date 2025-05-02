@@ -1,5 +1,10 @@
 package lesson1;
+
 public class Bank {
+
+    // pribvate是封裝的關鍵字
+    // 只能在這個類別作使用
+    // 除非使用set get去變更或提取值
     private String account;
     private int balance;
 
@@ -20,14 +25,16 @@ public class Bank {
         return this.account;
     }
 
-    public void setAccount(String inputAccount,String newAccount) {
-       if( this.account != inputAccount){
-            System.out.println("帳號輸入錯誤，無法執行更改");
-        }else{
+    // 情境1 帳號不對時不能更改帳號
+    public void setAccount(String inputAccount, String newAccount) {
+        if (this.account == inputAccount) {
             this.account = newAccount;
             System.out.println("帳號已更改為" + this.account);
+        } else {
+           
+            System.out.println("帳號輸入錯誤，無法執行更改");
+        }
     }
-}
 
     // getter方法是用來取得private值的方法
     public int getBalance() {
@@ -35,6 +42,10 @@ public class Bank {
     }
 
     // setter方法是用來設定private值的方法
+
+    //判斷驗證帳號是否正確情況下的情境
+    //情境2 存款的時候要檢查金額是否大於0
+    //情境3 提款的時候要檢查餘額是否足夠
     public void setBalance(String account, String action, int inputBalance) {
 
         if (account != this.account) {
@@ -48,7 +59,7 @@ public class Bank {
                 } else {
                     System.out.println("存錢金額必須大於0");
                 }
-            //如果action是提款 就減少balance的值
+            // 如果action是提款 就減少balance的值
             if (action == "withdraw") {
                 if (this.balance >= inputBalance) {
                     this.balance = this.balance - inputBalance;

@@ -1,6 +1,6 @@
 package lesson2;
 
-public class dog extends Animal {
+public class dog extends Animal2 {
     // 這裡是繼承父類別的屬性
     public dog(){
         super(); // 呼叫父類別的建構子

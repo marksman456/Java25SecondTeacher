@@ -2,7 +2,7 @@ package lesson2;
 
 public class Demo {
     public static void main(String[] args) {
-        Animal animal = new Animal();
+        Animal2 animal = new Animal2();
         animal.speak();
 
         // animal.bark(); 
@@ -17,6 +17,9 @@ public class Demo {
         cat cat1=new cat();
         cat1.speak();
         // cat1.mia();
+        
+
+
         
         
     }

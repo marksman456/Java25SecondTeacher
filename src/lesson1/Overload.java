@@ -1,5 +1,5 @@
 package lesson1;
-public class Printer {
+public class Overload {
 
     //多載
     //方法名稱相同 但參數不同(數量或類型不同) 這叫做多載
@@ -22,7 +22,7 @@ public class Printer {
     // 多載介紹
     public static void main(String[] args) throws Exception {
     
-        Printer printer1 = new Printer();
+        Overload printer1 = new Overload();
         
         printer1.show(); // 沒任何輸入
         printer1.show("Hello"); // 單一文字輸入 Hello

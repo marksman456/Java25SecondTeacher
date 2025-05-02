@@ -1,6 +1,6 @@
 package lesson2;
 
-public class  cat extends Animal {
+public class  cat extends Animal2 {
     public void mia(){
         System.out.println("喵喵叫");
     }
