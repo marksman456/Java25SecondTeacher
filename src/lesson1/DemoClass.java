@@ -147,5 +147,16 @@ public class DemoClass {
         //這個方法是從Object類別繼承來的，所以所有的Java物件都可以使用這個方法
         System.out.println(student1);
 
+
+        
+        
+        Overload2 messagePrinter =new Overload2();
+
+
+        
+        messagePrinter.printMessage("hello");
+        messagePrinter.printMessage(5.2,5.2);
+        messagePrinter.printMessage(5, 6, "hello");
+
     }
 }

@@ -1,4 +1,5 @@
 import lesson1.Person;
+import lesson3.Sedan;
 public class 課堂筆記 {
 
 
@@ -202,11 +203,18 @@ public class 課堂筆記 {
 
     //跨檔使用物件方法 最上層使用import 最上層使用 "import 想要引用的資料夾的.Person;"
 
-        Person person1 = new Person("Edward", 25);
+        // Person person1 = new Person("Edward", 25);
         
 
-        person1.showPersonInfo();// 印出來的結果是這個物件的資料
+        // person1.showPersonInfo();// 印出來的結果是這個物件的資料
 
+
+     
+
+        Sedan sedan1=new Sedan("car1",110); // 這裡的sedan1是Sedan類別的物件
+
+        sedan1.getMaxSpeed(); // 呼叫父類別Car2的方法，印出最大速度
+        sedan1.back(); // 呼叫子類別Sedan的方法，印出新功能:後退
     }
 }
 
