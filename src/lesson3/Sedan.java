@@ -2,9 +2,10 @@ package lesson3;
 
 public class Sedan extends Car2{
 
-     // 建構子：建立 Sedan 物件時，要傳入車名 和 最大速度
+     // 建構子：建立 Sedan 物件時，要傳入車名 和 最大速度 之後傳入super也就是父類別的建構子
     public Sedan(String name,int maxSpeed) {
-        super(name,maxSpeed); // 呼叫父類別的建構子，並傳入車名與最大速度
+        super(name,maxSpeed); // 呼叫父類別的建構子，並傳入車名與最大速度最一開始的建構子
+        // 這行是呼叫父類別的建構子，並傳入車名與最大速度，這樣 Sedan 物件就會有這些屬性
      
         // 呼叫父類別的建構子
          // 如果父類別沒有定義任何建構子，Java 會自動加入無參建構子，所以這行可以省略
@@ -18,6 +19,8 @@ public class Sedan extends Car2{
         System.out.println(name+"新功能:後退");
         
     }
+
+    
     }
     
 

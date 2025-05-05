@@ -1,7 +1,7 @@
-import lesson1.Person;
-import lesson3.Sedan;
-public class 課堂筆記 {
 
+import lesson3.*;
+
+public class 課堂筆記 {
 
     public static void main(String[] args) throws Exception {
 
@@ -156,69 +156,74 @@ public class 課堂筆記 {
 
         // for each 陣列 單獨顯示每個值
 
-    //     String getResult = checkscores(60);
-    //     System.out.println(getResult);
+        // String getResult = checkscores(60);
+        // System.out.println(getResult);
 
-    //     String getResult2= checkArray(1,2,3);
-    //     System.out.println(getResult2);
-    // }
+        // String getResult2= checkArray(1,2,3);
+        // System.out.println(getResult2);
+        // }
 
-    // public static String checkArray(int a, int b, int c) {
-    //     String result = "";
-    //     int[] bingo = { a, b, c }; // 修正: 使用 int 型別的參數 a, b, c 建立整數陣列
-    //     for (int nums : bingo) {
-    //         result += nums + " "; // 修正: 使用 += 將每個元素累加到 result，並加上空格分隔
-    //     }
-    //     result = result.trim(); // 修正: 去除最後多餘的空格
-        
-    //     return result; // 回傳 result 的值給方法使用
-    // }
+        // public static String checkArray(int a, int b, int c) {
+        // String result = "";
+        // int[] bingo = { a, b, c }; // 修正: 使用 int 型別的參數 a, b, c 建立整數陣列
+        // for (int nums : bingo) {
+        // result += nums + " "; // 修正: 使用 += 將每個元素累加到 result，並加上空格分隔
+        // }
+        // result = result.trim(); // 修正: 去除最後多餘的空格
 
-    
+        // return result; // 回傳 result 的值給方法使用
+        // }
 
-    // method 練習 寫一個成績判斷的method
-    // 用string把結果印出來
-    // 框框內參數是要拿來使用的值
-    // 回傳的是你要接來使用的 我要拿的是result 接出來給這個方法使用
-    // public static String checkscores(int scores) {
-    //     String result = "";
+        // method 練習 寫一個成績判斷的method
+        // 用string把結果印出來
+        // 框框內參數是要拿來使用的值
+        // 回傳的是你要接來使用的 我要拿的是result 接出來給這個方法使用
+        // public static String checkscores(int scores) {
+        // String result = "";
 
-    //     if (scores >= 90 && scores <= 100) {
-    //         result = "很棒";
-    //     }
+        // if (scores >= 90 && scores <= 100) {
+        // result = "很棒";
+        // }
 
-    //     else if (scores >= 80 && scores <= 89) {
-    //         result = "很好";
+        // else if (scores >= 80 && scores <= 89) {
+        // result = "很好";
 
-    //     } else if (scores >= 60 && scores <= 79) {
-    //         result = "好";
-    //     } else if (scores >= 0 && scores <= 59) {
-    //         result = "z不及格";
-    //     } else {
-    //         result = "請輸入1~100的範圍數字";
-    //     }
-    //     return result; // 回傳result的值給方法使用 回傳甚麼就是要使用甚麼
-    // }
+        // } else if (scores >= 60 && scores <= 79) {
+        // result = "好";
+        // } else if (scores >= 0 && scores <= 59) {
+        // result = "z不及格";
+        // } else {
+        // result = "請輸入1~100的範圍數字";
+        // }
+        // return result; // 回傳result的值給方法使用 回傳甚麼就是要使用甚麼
+        // }
 
-
-    //跨檔使用物件方法 最上層使用import 最上層使用 "import 想要引用的資料夾的.Person;"
+        // 跨檔使用物件方法 最上層使用import 最上層使用 "import 想要引用的資料夾的.Person;"
 
         // Person person1 = new Person("Edward", 25);
-        
 
         // person1.showPersonInfo();// 印出來的結果是這個物件的資料
 
-
-     
-
-        Sedan sedan1=new Sedan("car1",110); // 這裡的sedan1是Sedan類別的物件
+        Sedan sedan1 = new Sedan("car1", 110); // 這裡的sedan1是Sedan類別的物件
 
         sedan1.getMaxSpeed(); // 呼叫父類別Car2的方法，印出最大速度
         sedan1.back(); // 呼叫子類別Sedan的方法，印出新功能:後退
+
+        SedanV2 sedan2 = new SedanV2("car2", 120); // 這裡的sedan2是SedanV2類別的物件
+
+        sedan2.getMaxSpeed(); // 呼叫父類別Car2的方法，印出最大速度
+        sedan2.light(); // 呼叫子類別SedanV2的方法，印出新功能:開燈
+
+        sedan2.wiper("有"); // 呼叫父類別Car2的方法，印出雨刷功能
+
+
+        // 覆寫練習
+        SedanV3 sedan3 = new SedanV3("car3", 130); // 這裡的sedan3是SedanV3類別的物件
+
+        sedan3.getMaxSpeed(); // 覆寫了 加價會有更大馬力功能
+        sedan3.wiper("無");// 覆寫後的父類別方法，印出威力版本雨刷功能
+
+        
+
     }
 }
-
-
-
-
-

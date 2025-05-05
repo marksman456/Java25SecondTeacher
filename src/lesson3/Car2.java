@@ -19,13 +19,18 @@ public class Car2 {
 
    public void getMaxSpeed() {
        System.out.println("最大速度是:" +this.maxSpeed);
+       
    }
-
    public void setName(String name) {
        this.name = name;
    }
+
    public String getName() {
        return name;
+   }
+
+   public void  wiper(String yes){
+         System.out.println(this.name+yes+"雨刷功能");
    }
 
 
