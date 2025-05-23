@@ -1,5 +1,5 @@
 package HomeWork;
 
-public interface IPayable {
+public interface Ipayable {
      public void getPaymentAmount();
 }
