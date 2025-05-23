@@ -1,6 +1,7 @@
 package HomeWork;
 
-public class Employee extends Earning implements IInvoice,IPayable{
+
+public class Employee extends Earning implements IPayable, IInvoice {
 
     private String name;
     private String mobile;
