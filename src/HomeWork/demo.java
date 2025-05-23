@@ -10,7 +10,5 @@ public class demo {
         e1.getTax();
         e1.getPaymentAmount();
 
-        
-
     }
 }

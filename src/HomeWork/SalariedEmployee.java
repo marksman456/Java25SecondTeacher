@@ -1,43 +1,65 @@
 package HomeWork;
 
 public class SalariedEmployee extends Employee {
-    private double weeklySalary;
+    private double commissionRate;
+    private double grossSales;
+    private double baseSalary;
 
-    public SalariedEmployee(String name, String mobile, double weeklySalary) {
+    public SalariedEmployee(String name, String mobile, double commissionRate, double grossSales, double baseSalary) {
         super(name, mobile);
-        this.setWeeklySalary(weeklySalary);
+        this.setCommissionRate(commissionRate);
+        this.setGrossSales(grossSales);
+        this.setBaseSalary(baseSalary);
     }
 
-    public double getWeeklySalary() {
-        return weeklySalary;
+    public void setBaseSalary(double baseSalary) {
+        this.baseSalary = baseSalary;
     }
 
-    public void setWeeklySalary(double weeklySalary) {
-        this.weeklySalary = weeklySalary;
+    public double getBaseSalary() {
+        return baseSalary;
+    }
+
+    public void setCommissionRate(double commissionRate) {
+        this.commissionRate = commissionRate;
+    }
+
+    public double getCommissionRate() {
+        return commissionRate;
+    }
+
+    public double getGrossSales() {
+        return grossSales;
+    }
+
+    public void setGrossSales(double grossSales) {
+        this.grossSales = grossSales;
     }
 
     @Override
     public String toString() {
-        return "SalariedEmployee{" +
-                "weeklySalary=" + weeklySalary +
-                ", name='" + getName() + '\'' +
-                ", mobile='" + getMobile() + '\'' +
-                '}';
-    }
-
-    @Override
-    public void earnings() {
-        System.out.println("Earnings: " + getWeeklySalary());
+        String result = "SalariedEmployee員工基本資料";
+        result += "\n姓名:" + super.getName();
+        result += "\n手機:" + super.getMobile();
+    
+        return result;
     }
 
     @Override
     public void getTax() {
-        System.out.println("Tax: " + (getWeeklySalary() * 0.1));
+        double tax = (this.getBaseSalary() + this.getGrossSales() * this.getCommissionRate()) * 0.05;
+        System.out.println("本月稅金:" + tax);
     }
 
     @Override
-    public void getPaymentAmount() {
-        System.out.println("Payment Amount: " + (getWeeklySalary() - (getWeeklySalary() * 0.1)));
+    public void earnings() {
+        double earnings = this.getBaseSalary() + this.getGrossSales() * this.getCommissionRate();
+        System.out.println("本月薪資:" + earnings);
     }
-    
+@Override
+    public void getPaymentAmount() {
+        double payment = (this.getBaseSalary() + this.getGrossSales() * this.getCommissionRate()) - ((this.getBaseSalary() + this.getGrossSales() * this.getCommissionRate()) * 0.05);
+        System.out.println("本月實領金額:" + payment);
+    }
+
 }

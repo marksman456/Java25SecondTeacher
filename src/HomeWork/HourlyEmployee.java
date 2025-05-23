@@ -26,11 +26,9 @@ public class HourlyEmployee extends Employee {
 
 @Override
 public String toString(){
-    String result="員工基本資料";
+    String result=" Hourly員工基本資料";
     result+="\n姓名:"+super.getName();
     result+="\n手機:"+super.getMobile();
-    result+="\n時薪:"+this.getWage();
-    result+="\n工時:"+this.getHours();
     return result;
 }
 
