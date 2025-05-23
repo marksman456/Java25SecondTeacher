@@ -11,8 +11,8 @@ public class EmailNotification extends Notification {
         System.out.println("已寄送通知"); // 發送電子郵件通知
     }
 
-    public void log() {
-        System.out.println("電子郵件通知已發送給: " + super.getRecipient()); // 記錄電子郵件通知的接收者
-    }
+    // public void log() {
+    //     System.out.println("電子郵件通知已發送給: " + super.getRecipient()); // 記錄電子郵件通知的接收者
+    // }
 
 }
